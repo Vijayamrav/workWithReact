@@ -1,10 +1,14 @@
- const ButtonComponent=()=>{
+ export const ButtonComponent=(prop)=>{
+    const {text,bgColor,height,width,alternateText}=prop
     return(
         <>
-        <h2>iam a button</h2>
-        <button>click here</button>
+        <button 
+        style={{backgroundColor:bgColor,height:height,width:width,alt:alternateText}}
+        >
+            {text}
+        </button>
         </>
     )
 }
 
-export default ButtonComponent;
+

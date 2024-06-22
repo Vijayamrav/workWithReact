@@ -1,19 +1,22 @@
 // import logo from './logo.svg';
 import './App.css';
-import  ButtonComponent from './components/buttons/button.js'
+import {ButtonComponent} from './components/buttons/button.js'
 import {CricTable} from './components/tables/table1.js'
 import { Example } from './components/tables/table1.js';
 import { UnorderedList } from './components/lists/list1.js';
 import { RenderTeams } from './components/conditionalrender/rendering1.js';
 import Button from '@mui/material/Button';
 import {Images} from './components/Images.js';
+import { FakeStoreData } from './components/fakeStroreApi.js';
+import { Heading1 } from './components/Headings/Headings.js';
+
 
 
 
 function App() {
    return(
-     <div>
-     <Images
+     <div className='container'>
+     {/* <Images
        src='https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
        className='camellion'
        alt='camellion'
@@ -24,7 +27,22 @@ function App() {
        className='camellion'
        alt='camellion'
        
-       />
+       /> */}
+       {
+        FakeStoreData.map((data)=>{
+          return(
+              <>
+              <Images src={data.image}/>
+              <Heading1 title={data.title}/>
+              <ButtonComponent text={data.price} bgColor='blue' height={100} width={100} alternateText=''/>
+              
+              </>
+             
+          )
+        })
+       
+       }
+       <ButtonComponent text='login' bgColor='blue' height='100' width='100' alternateText=''/>
      </div>
    )
   

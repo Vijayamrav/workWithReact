@@ -1,8 +1,9 @@
 import './Images.css'
 export const Images=(prop)=>{
+  const {src,alt,className}=prop
     return(
-      <img src={prop.src}  alt={prop.alt} className={prop.className}>
+      <img {...prop}/>
          
-      </img>
+      
     )
 }
