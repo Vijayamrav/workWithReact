@@ -6,7 +6,8 @@ import './App.css';
 import { ButtonClassComponent } from './components/class-componenets/ButtonClass.js';
 import { Todos } from './components/class-componenets/Todos.js';
 import { ProductListing } from './components/class-componenets/productListing/productListing.js';
-import { BGenerateCircle } from './components/circleTask/geneCircles.js';
+import { GenerateCircle } from './components/circleTask/geneCircles.js';
+import { CheckState } from './components/checks/check1.js';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
 
       
          {/* <Todos/> */}
-         <BGenerateCircle/>
+         <GenerateCircle/>
+         {/* <CheckState/> */}
          
      </div>
      
