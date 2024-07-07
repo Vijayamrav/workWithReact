@@ -1,46 +1,43 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
-// import  ButtonComponent from './components/buttons/button.js'
-// import {CricTable} from './components/tables/table1.js'
-// import { Example } from './components/tables/table1.js';
+import  ButtonComponent from './components/buttons/button.js'
+import {CricTable} from './components/tables/table1.js'
+import { Example } from './components/tables/table1.js';
 import { ButtonClassComponent } from './components/class-componenets/ButtonClass.js';
 import { Todos } from './components/class-componenets/Todos.js';
 import { ProductListing } from './components/class-componenets/productListing/productListing.js';
 import { GenerateCircle } from './components/circleTask/geneCircles.js';
 import { CheckState } from './components/checks/check1.js';
+import { IplTeams } from './components/conditionalRender/iplteams.js';
+
+import { FunctionHook } from './components/counterClick.js';
+import { OnOffBtn } from './components/HooksPractice/OnOffButton.js';
+import { UserInput } from './components/HooksPractice/UserInput.js';
+import {ParentComponent} from './components/HooksPractice/CombineBoth.js';
+import { UseEffectExample } from './components/useEffect/useEffectEx1.js';
+import { RecipieTable } from './components/TableCompo.js';
+import { HelloWorld } from './components/conceptsInBook/hooks/hook1.js';
+import React from 'react';
+import { WelcomeMsg } from './components/conceptsInBook/props/props1.js';
+import { SecurePassword } from './components/ReactConceptsQuestions/1.js';
+import { Checkcontent } from './components/ReactConceptsQuestions/2.js';
+
+
 
 
 function App() {
-  const user={
-    name:"luffy",
-    age:16,
-    position:'king of the pirates',
-    picture:"https://w7.pngwing.com/pngs/666/56/png-transparent-monkey-d-luffy-manga-one-piece-anime-manga-comics-hand-piracy.png"
-  }
-
+    
     return(
      <div>
-  {/* //        <img src={user.picture} alt="luffy" style={{height:100 ,width:100}}/>
-         
-  //        <h1>{user.name}</h1>
-  //        <h2>{user.age}</h2>
-  //        <h2>{user.position}</h2> */}
-        
-      
-      
+          
+          {/* <WelcomeMsg message={"hello vijay"} isLogin={true}/> */}
+          {/* <UseEffectExample/> */}
+          <SecurePassword/>
+          <Checkcontent message="hello vijay"/>
 
-      
-         {/* <Todos/> */}
-         <GenerateCircle/>
-         {/* <CheckState/> */}
-         
+
      </div>
-     
-
    )
   
 }
-
-
-
 export default App;
