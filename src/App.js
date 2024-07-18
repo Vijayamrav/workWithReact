@@ -21,7 +21,13 @@ import React from 'react';
 import { WelcomeMsg } from './components/conceptsInBook/props/props1.js';
 import { SecurePassword } from './components/ReactConceptsQuestions/1.js';
 import { Checkcontent } from './components/ReactConceptsQuestions/2.js';
-
+import { FarmHouse } from './components/conceptsInBook/props/props2.js';
+import { HeadingChildren } from './components/conceptsInBook/props/children.js';
+import { UseEffect11 } from './components/useEffect/useEffect2.js';
+import { UpdateCounter } from './components/useState/useState1.js';
+import { Logging } from './components/useEffect/useEffectexample.js';
+import TimerRestartFun from './components/useEffect/useEffect3.js';
+import { Country } from './components/countryAPI/Fetching.js';
 
 
 
@@ -29,12 +35,10 @@ function App() {
     
     return(
      <div>
-          
-          {/* <WelcomeMsg message={"hello vijay"} isLogin={true}/> */}
-          {/* <UseEffectExample/> */}
-          <SecurePassword/>
-          <Checkcontent message="hello vijay"/>
-
+         {/* <Logging/>  */}
+         {/* <TimerRestartFun/> */}
+         <Country/>
+         
 
      </div>
    )
