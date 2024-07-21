@@ -29,16 +29,19 @@ import { Logging } from './components/useEffect/useEffectexample.js';
 import TimerRestartFun from './components/useEffect/useEffect3.js';
 import { Country } from './components/countryAPI/Fetching.js';
 
+import { CheckTailwind } from './components/forms/forms1.js';
+import { PhoneData } from './components/phoneBookComponent.js';
+import { SearchBar } from './components/searchBar.js';
+
 
 
 function App() {
     
     return(
      <div>
-         {/* <Logging/>  */}
-         {/* <TimerRestartFun/> */}
-         <Country/>
-         
+        
+        {/* <PhoneData/> */}
+        <SearchBar/>
 
      </div>
    )
